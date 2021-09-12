@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:   Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+ 
+
+nav{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background:rgba(64,224,208,100);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    box-shadow: 0px 15px 10px -18px grey;  
+}
+nav img{
+  
+    width:45px;
+    height:45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+nav h3{
+    color:#333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top:10px;
+}
+nav h3 sup{
+    background: #2dba1e;
+    color:white;
+    font-size: 11px;
+    border-radius: 5px;
+    padding:5px;
+    margin-left:10px;
+}
+nav p{
+    color:white;
+    margin-top:5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+section{
+    width:100%;
+    margin-top:140px;
+    padding:20px;
+}
+section .container{
+   
+    width:35%;
+    padding:5px;
+    margin:0 auto;
+    box-shadow: 0px 15px 10px -20px grey; 
+    margin-bottom:20px;
+}
+section .container .head{
+ 
+    margin-bottom:15px;
+}
+.head h3{
+    font-size: 17px;
+    color:rgba(92,90,90);
+    word-spacing: 2px;
+}
+section .container .head h3 i{
+     margin-right:8px;
+}
+section .container .link{
+    background: whitesmoke;
+    border-radius: 5px;
+   padding:13px;
+  margin:20px;
+}
+section .container .link a{
+    text-decoration: none;
+    color:#333;
+    font-weight: 700;
+    font-size: 14px;
+}
+section .container .link a i{
+      float:right;
+      color:rgba(64,224,208,100);
+}
+section .container .link a i:hover{
+ background: lightgray;
+  border-radius: 50%;
+  padding:8px;
+  transition: 0.3s;
+  text-align: center;
+   
+}
+.youtube{
+    
+    width:35%;
+    padding:15px;
+    margin:0 auto;
+    box-shadow: 0px 15px 10px -20px grey; 
+    margin-bottom:20px;
+}
+.youtube .content{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #313132;
+    padding:20px;
+    border-radius: 10px;
+}
+.youtube .head {
+    margin-bottom: 15px;
+}
+.youtube .content img{
+    border-radius: 50%;
+    object-fit: cover;
+    width:100px;
+    height:100px;
+    
+}
+.youtube .content .inner-content{
+    margin-left:20px;
+}
+.youtube .content .inner-content h3{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.youtube .content .inner-content p{
+    color:white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.youtube .content .inner-content a button{
+    color:white;
+    background: red;
+    outline: none;
+    border: none;
+    padding:10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor:pointer;
+}
+nav.sticky img{
+    display: none;
+
+}
+nav.sticky h3{
+    margin-top: 0;
+}
+ 
+@media  screen and (max-width:960px) {
+    section .container{
+        margin:0;
+        width:100%;
+    }
+    section .youtube{
+        margin:0;
+        width:100%;
+    }
+}
+ 
